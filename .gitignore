@@ -1,0 +1,6 @@
+venv/
+__pychache__
+cms.db
+*.pyc
+instance/
+.webassets-cache
