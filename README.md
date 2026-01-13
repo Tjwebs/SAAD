@@ -13,8 +13,7 @@
     - [3.2. Prerequisites](#32-prerequisites)
     - [3.3. Installation](#33-installation)
 - [4. Usage](#4-usage)
-- [5. Roadmap](#5-roadmap)
-- [6. Acknowledgements](#6-acknowledgements)
+- [5. Acknowledgements](#5-acknowledgements)
 
 ## 2. About The Project
 
@@ -32,75 +31,77 @@ This is the assessment project for the Software Architecture and Design (SAaD) m
 
 ### 2.4. Built With
 
-This section should be dedicated to what you used to make your project. All major frameworks should be listed, for example:
-
-- Python
+- Python (Flask)
 - SQLite3
 - HTML/CSS
 - JavaScript
-- SQL Server
+- JWT (PyJWT)
+- bcrypt
 
 ## 3. Getting Setup
 
 
 ### 3.1. Contents of Submission
 
-List all contents of your submission here, such as:
+- frontend/ - Flask frontend serving HTML templates
+- user_service/ - User authentication microservice
+- problem_service/ - Problem management microservice
+- tenant_service/ - Tenant management microservice
+- templates/ - HTML templates (login, dashboard, create problem)
+- static/ - CSS stylesheets
+- tests/ - pytest and Selenium test files
+- images/ - Test result screenshots
+- tenant_service.db - Tenant database
+- user_service.db - User database
+- problem_service.db - Problem database
+- requirements.txt - Python dependencies
 
-- HTML/CSS/JS for all pages
-- AccountController.cs
-- Quote.cs
-- Login.cs
-- Unit-Testing.docx
-- etc...
 
 ### 3.2. Prerequisites
 
-In this section, outline any prerequisites for running the software, such as:
-
-- ASP.NET Core
-- Visual Studio 2019
-- Microsoft.Data.SqlClient
-- etc...
+- Python 3.12+
+- pip (For installing from `requirements.txt`)
 
 ### 3.3. Installation
 
-Download and unzip the file.
+1. Download and unzip the file
+2. Open folder with IDE of choice
+3. Open a terminal and cd into the SAAD folder
+4. Run `python -m venv venv`
+5. Run `source venv/bin/activate` to activate venv (Linux/Mac) or `venv\Scripts\activate` (Windows)
+6. Run `pip install -r requirements.txt`
+7. After installation, open four terminals
+8. Activate venv in each terminal and cd into the SAAD folder
+9. Run each command in a separate terminal:
+   - `python tenant_service/app.py`
+   - `python user_service/app.py`
+   - `python problem_service/app.py`
+   - `python frontend/app.py`
+10. Open a web browser and navigate to `http://127.0.0.1:5000/`
 
-Open folder with IDE of choice.
+**Test Credentials:** test@barclays.com / password123
 
-Open a terminal cd into the SAAD folder then run "python -m venv path/to/venv/"
-
-Run "source /path/to/SAAD/venv/bin/activate" to activate venv
-
-Then run "pip install -r requirements.txt"
-
-After installation is finished open four terminals
-
-Make sure the venv is active in each terminal and you are cd'd into the root SAAD folder.
-
-Run the following lines of code each in a separate terminal as they must stay running (the order doesn't matter)
-
-1. "python tenant_service/app.py"
-2. "python problem_service/app.py"
-3. "python user_service/app/py"
-4. "python frontend/app.py"
-Open a web browser and in the search bar type in "http://127.0.0.1:5000/"
-
-If you wish to run the non-postman tests open a new terminal, cd to SAAD folder, activate venv and type "pytest tests/ -v" The results will be displayed in the terminal
+**Running Tests:**
+```bash
+source venv/bin/activate
+pytest tests/ -v
+```
 
 ## 4. Usage
+**Login:** Enter credentials to receive JWT token and access dashboard
 
-Use this section for showing examples of how the software can be used. Include screenshots, code snippets etc. Also link to any documentation you may have here.
+**View Problems:** Dashboard displays all problems for your tenant with status badges
 
-## 5. Roadmap
+**Create Problem:** Click "Create Problem", enter title (max 50 chars) and optional description
 
-Explain your roadmap. What have you developed so far? What would be developed in future releases? Link to Github Issues if you use them.
+**Update Status:** Use Postman to PATCH `/problems/{id}` with new status (API only)
 
-## 6. Acknowledgements
 
-Use this final section for listing links to any resources you have used, frameworks, information sources etc...
 
-- [ASP.NET Core documentation](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-5.0)
-- [Microsoft.Data.SqlClient documentation](https://www.nuget.org/packages/Microsoft.Data.SqlClient/)
-- [Procure to Pay system](https://kissflow.com/procurement/procure-to-pay-process-guide/)
+## 5. Acknowledgements
+
+- [Flask Documentation](https://flask.palletsprojects.com/)
+- [PyJWT Documentation](https://pyjwt.readthedocs.io/)
+- [bcrypt Documentation](https://pypi.org/project/bcrypt/)
+- [Flask-CORS Documentation](https://flask-cors.readthedocs.io/)
+- [SQLite Documentation](https://www.sqlite.org/docs.html)
