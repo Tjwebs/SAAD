@@ -42,6 +42,29 @@ This section should be dedicated to what you used to make your project. All majo
 
 ## 3. Getting Setup
 
+
+### 3.1. Contents of Submission
+
+List all contents of your submission here, such as:
+
+- HTML/CSS/JS for all pages
+- AccountController.cs
+- Quote.cs
+- Login.cs
+- Unit-Testing.docx
+- etc...
+
+### 3.2. Prerequisites
+
+In this section, outline any prerequisites for running the software, such as:
+
+- ASP.NET Core
+- Visual Studio 2019
+- Microsoft.Data.SqlClient
+- etc...
+
+### 3.3. Installation
+
 Download and unzip the file.
 
 Open folder with IDE of choice.
@@ -65,31 +88,6 @@ Run the following lines of code each in a separate terminal as they must stay ru
 Open a web browser and in the search bar type in "http://127.0.0.1:5000/"
 
 If you wish to run the non-postman tests open a new terminal, cd to SAAD folder, activate venv and type "pytest tests/ -v" The results will be displayed in the terminal
-### 3.1. Contents of Submission
-
-List all contents of your submission here, such as:
-
-- HTML/CSS/JS for all pages
-- AccountController.cs
-- Quote.cs
-- Login.cs
-- Unit-Testing.docx
-- etc...
-
-### 3.2. Prerequisites
-
-In this section, outline any prerequisites for running the software, such as:
-
-- ASP.NET Core
-- Visual Studio 2019
-- Microsoft.Data.SqlClient
-- etc...
-
-### 3.3. Installation
-
-Explain how to install your software to run. For example "Unzip the submission folder and load it into IntelliJ IDEA. Ensure you have the prerequisites installed and are imported correctly. Install the Microsoft.Data.SqlClient NuGet package using Package Manager etc..."
-
-Use Screenshots if possible for installing packages, or link to documentation (can also include this in the acknowledgements).
 
 ## 4. Usage
 
