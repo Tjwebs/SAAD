@@ -1,16 +1,27 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import sys
 sys.path.append('.')
-from shared.database import get_db, get_conn
-from shared.auth import decodeToken
+from problem_service.auth import decode_token
+from problem_service.service import ProblemService
+
+#HTTP status codes key: 200 OK
+#                       201 Created, For e.g. a new entry in the database
+#                       400 Bad Request, An error in the client input e.g. No '@' symbol in an email entry field
+#                       401 Unauthorised: No valid JWT token in the header
+#                       404 Requested resource could not be found, e.g. if searching for an id that there is no match for.
 
 app = Flask(__name__)
+#In full production this would need to be restricted e.g. CORS(app, origins=['https://CMS.com'])
+CORS(app)
+
+problemService = ProblemService()
 
 @app.route('/problems', methods=['POST'])
+
 def create_problem():
     
-    payload, error = decodeToken(request.headers.get('Authorization'))
-    
+    payload, error = decode_token(request.headers.get('Authorization'))
     if error:
         return jsonify({'error': error}), 401
     
@@ -22,47 +33,59 @@ def create_problem():
         return jsonify({'error': 'Title is required'}), 400
     if len(title) > 50:
         return jsonify({'error': 'Title must be 50 characters or less'}), 400
-    if desc and len(desc) < 10:
-        return jsonify({'error': 'Description must be at least 10 characters'}), 400
     
-    ##conn = get_db()
-    ##cursor = conn.cursor()
-    conn, cursor = get_conn()
+    problem_id = problemService.create(title, desc, payload['uID'], payload['tenID'])
     
-    cursor.execute('''
-                   INSERT INTO Problems (creatorID, tenID, title, desc)
-                   VALUES (?, ?, ?, ?)
-                   ''', 
-                   (payload['uID'], payload['tenID'], title, desc)
-                   )
-    
-    conn.commit()
-    probID = cursor.lastrowid
-    conn.close()
-    
-    return jsonify({
-        'message': 'Problem created',
-        'probID': probID
-    }), 201
-    
+    return jsonify({'message': 'Problem created', 'probID': problem_id}), 201
+
+
 @app.route('/problems', methods=['GET'])
-def get_problems_tenID():
-    
-    payload, error = decodeToken(request.headers.get('Authorization'))
+
+def get_problems():
+    payload, error = decode_token(request.headers.get('Authorization'))
     if error:
         return jsonify({'error': error}), 401
     
-    ##conn = get_db()
-    ##cursor = conn.cursor()
-    conn, cursor = get_conn()    
-    cursor.execute('''
-                   SELECT * FROM Problems WHERE tenID = ?
-                   ''', (payload['tenID'],))
+    problems = problemService.get_all_uID(payload['uID'], payload['tenID'])
     
-    problems = cursor.fetchall()
-    conn.close()
+    return jsonify(problems), 200
+
+
+@app.route('/problems/<int:problem_id>', methods=['GET'])
+
+def get_problem(problem_id):
+    payload, error = decode_token(request.headers.get('Authorization'))
+    if error:
+        return jsonify({'error': error}), 401
     
-    return jsonify([dict(p) for p in problems]), 200
+    problem = problemService.get_by_pID(problem_id, payload['tenID'])
+    
+    if not problem:
+        return jsonify({'error': 'Problem not found'}), 404
+    
+    return jsonify(problem), 200
+
+
+@app.route('/problems/<int:problem_id>', methods=['PATCH'])
+
+def update_status(problem_id):
+    payload, error = decode_token(request.headers.get('Authorization'))
+    if error:
+        return jsonify({'error': error}), 401
+    
+    data = request.get_json()
+    status = data.get('status')
+    
+    if not status:
+        return jsonify({'error': 'Status is required'}), 400
+    
+    updated = problemService.update_status(problem_id, status, payload['tenID'])
+    
+    if not updated:
+        return jsonify({'error': 'Problem not found'}), 404
+    
+    return jsonify({'message': 'Status updated'}), 200
+
 
 if __name__ == '__main__':
-    app.run(port=5002, debug=True) 
+    app.run(port=5002, debug=True)

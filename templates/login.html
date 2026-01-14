@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CMS Login</title>
+        <link rel="stylesheet" href="/static/style.css">
+    </head>
+
+    <body>
+        <h1>Complaint Management System</h1>
+        <p class="subtitle">Sign in to access your dashboard</p>
+
+        <div class="login-box">
+
+            <h2>Login</h2>
+            <p>Enter your credentials to continue</p>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="user@example.com">
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="••••••••">
+
+            <button onclick="login()">Submit</button>
+
+            <div class="error" id="error">
+                <strong>Error</strong><br>
+                <span id="error-message"></span>
+            </div>
+
+        </div>
+
+        <script>
+
+            async function login(){
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+                const errorDiv = document.getElementById('error');
+                const errorMsg = document.getElementById('error-message');
+
+                errorDiv.style.display = 'none';
+
+                if(!email || !password)
+                {
+                    errorDiv.style.display = 'block';
+                    errorMsg.textContent = 'Please enter email and password';
+                    return;
+                }
+
+                try 
+                {
+                    const response = await fetch('http://127.0.0.1:5001/login',
+                    {
+                        method: 'POST',
+                        headers: 
+                        {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({email, password})
+                    });
+
+                    const data = await response.json();
+
+                    if(response.ok)
+                    {
+                        localStorage.setItem('token', data.token);
+                        window.location.href = '/dashboard';
+                    }
+                    else
+                    {
+                        errorDiv.style.display = 'block';
+                        errorMsg.textContent = data.error || 'Login Failed';
+                    }
+                } catch (err)
+                {
+                    errorDiv.style.display = 'block';
+                    errorMsg.textContent = 'Could not connect to server';
+                }
+            }
+        </script>
+
+    </body>
+</html>

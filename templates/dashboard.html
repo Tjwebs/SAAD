@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="header">
+        <h2>Customer Dashboard</h2>
+        <button onclick="logout()">Logout</button>
+    </div>
+    
+    <div class="container">
+        <div class="top-bar">
+            <div>
+                <h2>My Problems</h2>
+                <p class="subtitle">Submit and track your problems</p>
+            </div>
+            <button onclick="window.location.href='/create'">+ Create Problem</button>
+        </div>
+        
+        <div id="problems-list">
+            <!-- Problems go here -->
+        </div>
+    </div>
+
+    <script>
+        const token = localStorage.getItem('token');
+        
+        if (!token) {
+            window.location.href = '/';
+        }
+        
+        async function loadProblems() {
+            try {
+                const response = await fetch('http://127.0.0.1:5002/problems', {
+                    headers: {
+                        'Authorization': 'Bearer ' + token
+                    }
+                });
+                
+                const problems = await response.json();
+                const container = document.getElementById('problems-list');
+                
+                if (problems.length === 0) {
+                    container.innerHTML = '<p>No problems found. Create one!</p>';
+                    return;
+                }
+                
+                container.innerHTML = problems.map(p => `
+                    <div class="problem-card">
+                        <div style="display: flex; justify-content: space-between;">
+                            <h3>${p.title}</h3>
+                            <span class="badge ${p.status === 'Open' ? 'badge-open' : 'badge-closed'}">${p.status}</span>
+                        </div>
+                        <p class="meta">Submitted on ${p.createdAt}</p>
+                        <div style="display: flex; justify-content: space-between;">
+                            <p>${p.desc || 'No description'}</p>
+                            ${p.status === 'Open' ? `<button onclick="closeProblem(${p.probID})">Close Problem</button>` : ''}
+                        </div>
+                    </div>
+                `).join('');
+                
+            } catch (err) {
+                console.error(err);
+            }
+        }
+        
+        async function closeProblem(probID){
+            try {
+                const response = await fetch(`http://127.0.0.1:5002/problems/${probID}`, {
+                    method: 'PATCH',
+                    headers: {
+                        'Authorization': 'Bearer ' + token,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ status: 'Closed' })
+                });
+                
+                if (response.ok) {
+                    loadProblems();
+                }
+            } catch (err) {
+                console.error(err);
+            }
+        }
+        
+        function logout() {
+            localStorage.removeItem('token');
+            window.location.href = '/';
+        }
+        
+        loadProblems();
+    </script>
+</body>
+</html>

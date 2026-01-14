@@ -1,0 +1,188 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.7" pages="3">
+  <diagram name="Login Page" id="Si8FSoB1SaiCoCqx_iI5">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="iOTmeD-yLX97ADtdbSH0-6" parent="1" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.window;align=left;verticalAlign=top;spacingLeft=8;strokeColor2=#008cff;strokeColor3=light-dark(#C4C4C4,#000000);fontColor=light-dark(#666666,#000000);mainText=;fontSize=17;labelBackgroundColor=none;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#ECECEC);perimeterSpacing=0;" value="&lt;font style=&quot;&quot;&gt;CMS Login Page&lt;/font&gt;" vertex="1">
+          <mxGeometry height="720" width="1280" as="geometry" />
+        </mxCell>
+        <mxCell id="iOTmeD-yLX97ADtdbSH0-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#FFFFFF);strokeColor=light-dark(#000000,#E7E7E7);arcSize=6;" value="" vertex="1">
+          <mxGeometry height="430" width="420" x="430" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="z2OtGz2GDMPNgTQ5E1u5-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#000000);fontStyle=1;fontSize=24;" value="&lt;font&gt;Complaint Management System&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="370" x="455" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="z2OtGz2GDMPNgTQ5E1u5-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#4B4B4B);fontSize=18;" value="Sign in to access your dashboard" vertex="1">
+          <mxGeometry height="30" width="280" x="500" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="z2OtGz2GDMPNgTQ5E1u5-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#000000);fontSize=18;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Login&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="65" x="455" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="z2OtGz2GDMPNgTQ5E1u5-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=16;fontColor=light-dark(#000000,#4B4B4B);" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Enter your credentials to continue&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="285" x="455" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="z2OtGz2GDMPNgTQ5E1u5-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#000000);fontSize=18;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Email&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="65" x="455" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="z2OtGz2GDMPNgTQ5E1u5-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=light-dark(#000000,#0000FF);fillColor=light-dark(#FFFFFF,#ECECEC);align=left;verticalAlign=middle;rounded=1;fontFamily=Helvetica;fontSize=16;fontColor=light-dark(#000000,#4B4B4B);spacingLeft=5;strokeWidth=2;" value="user@example.com" vertex="1">
+          <mxGeometry height="30" width="365" x="457.5" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="z2OtGz2GDMPNgTQ5E1u5-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#000000);fontSize=18;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Password&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="105" x="455" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="z2OtGz2GDMPNgTQ5E1u5-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=light-dark(#FFFFFF,#ECECEC);align=left;verticalAlign=middle;rounded=1;fontFamily=Helvetica;fontSize=16;fontColor=light-dark(#000000,#4B4B4B);spacingLeft=5;" value="**********" vertex="1">
+          <mxGeometry height="30" width="365" x="457.5" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="z2OtGz2GDMPNgTQ5E1u5-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=light-dark(#FFFFFF,#040404);align=center;verticalAlign=middle;rounded=1;fontFamily=Helvetica;fontSize=18;fontColor=light-dark(#000000,#FFFFFF);spacingLeft=5;" value="Submit" vertex="1">
+          <mxGeometry height="30" width="365" x="457.5" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="z2OtGz2GDMPNgTQ5E1u5-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=light-dark(#000000,#E7E7E7);fillColor=none;align=left;verticalAlign=top;rounded=1;fontColor=light-dark(#000000,#CC0000);fontSize=18;labelPosition=center;verticalLabelPosition=middle;" value="&lt;font&gt;⚠ &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Error&lt;/font&gt;&lt;div&gt;&lt;font&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Please enter valid credentials&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="310" x="485" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="z2OtGz2GDMPNgTQ5E1u5-15" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fontFamily=Helvetica;fontSize=18;fontColor=light-dark(#000000,#000000);fillColor=light-dark(#FFFFFF,#FFFFFF);" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;u&gt;WCAG Compliance Notes&lt;/u&gt;&lt;/h1&gt;&lt;p&gt;Colours:&lt;br&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Page background: #ECECEC&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Form container: #FFFFFF&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Input fields: #ECECEC&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Primary text: #000000&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Placeholder/Secondary text: #4C4C4C&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Error text: #CC0000&lt;br&gt;- Focus indicator highlight colour: #0000FF&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- All contrast ratios meet WCAG 2.0 AA (4.5:1 minimum)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Typography:&lt;br&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Heading: 24px bold&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Body text: 16-18px&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Tab Order:&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;① Email field&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;② Password field&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;③ Submit button&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Accessibility:&lt;br&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- All inputs have visible labels above fields&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Focus indicator: 2px blue outline on active element (consistent across app)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Error uses icon + text (not colour alone)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Placeholder text is hint only, not replacement for labels&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Form is keyboard navigable (Tab/Shift+Tab/Enter)&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="680" width="630" y="720" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="cdq2uwjQpg5pRPj_cWpm" name="View Problems">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PpcB0-fWULqHJ4ZEXAoh-1" parent="1" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.window;align=left;verticalAlign=top;spacingLeft=8;strokeColor2=#008cff;strokeColor3=light-dark(#C4C4C4,#000000);fontColor=light-dark(#666666,#000000);mainText=;fontSize=17;labelBackgroundColor=none;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#ECECEC);perimeterSpacing=0;" value="&lt;font style=&quot;&quot;&gt;CMS Problems Dashboard&lt;/font&gt;" vertex="1">
+          <mxGeometry height="720" width="1280" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrqAQ7mPZihaorNM0sg-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#CDCDCD);fillColor=light-dark(#FFFFFF,#FFFFFF);" value="" vertex="1">
+          <mxGeometry height="60" width="1280" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrqAQ7mPZihaorNM0sg-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#000000);fontSize=24;fontStyle=1" value="Customer Dashboard" vertex="1">
+          <mxGeometry height="30" width="250" x="340" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrqAQ7mPZihaorNM0sg-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=light-dark(#000000,#CDCDCD);fillColor=none;align=center;verticalAlign=middle;rounded=1;fontColor=light-dark(#000000,#000000);fontSize=18;" value="Logout" vertex="1">
+          <mxGeometry height="30" width="80" x="860" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrqAQ7mPZihaorNM0sg-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#000000);fontSize=20;fontStyle=0" value="My Problems" vertex="1">
+          <mxGeometry height="30" width="130" x="335" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrqAQ7mPZihaorNM0sg-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#4B4B4B);fontSize=18;" value="Submit and track your problems" vertex="1">
+          <mxGeometry height="30" width="280" x="335" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="-sy0TBGO0Y--vMdmR4DE-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;rotation=0;strokeColor=light-dark(#000000,#CDCDCD);fillColor=light-dark(#FFFFFF,#FFFFFF);" value="" vertex="1">
+          <mxGeometry height="150" width="600" x="340" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="-sy0TBGO0Y--vMdmR4DE-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=default;align=center;verticalAlign=middle;rounded=1;fontSize=18;" value="+ Create Problem" vertex="1">
+          <mxGeometry height="40" width="165" x="775" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="-sy0TBGO0Y--vMdmR4DE-4" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.983;entryY=0.786;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.017;exitY=0.786;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=light-dark(#000000,#CDCDCD);" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="353.99999999999983" y="289.99999999999994" as="sourcePoint" />
+            <mxPoint x="933.6000000000001" y="289.99999999999994" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-sy0TBGO0Y--vMdmR4DE-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#000000);fontSize=20;" value="Login issues" vertex="1">
+          <mxGeometry height="30" width="126" x="354" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="-sy0TBGO0Y--vMdmR4DE-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#4B4B4B);fontSize=16;" value="Submitted on 15/11/25 at 10:30" vertex="1">
+          <mxGeometry height="30" width="228" x="354" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="-sy0TBGO0Y--vMdmR4DE-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#000000);fontSize=18;" value="Unable to login to the portal" vertex="1">
+          <mxGeometry height="30" width="239" x="351" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="-sy0TBGO0Y--vMdmR4DE-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=light-dark(#FFFFFF,#FFFF00);align=center;verticalAlign=middle;rounded=1;fontColor=light-dark(#000000,#806600);fontSize=18;" value="Open" vertex="1">
+          <mxGeometry height="30" width="80" x="853.35" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="-sy0TBGO0Y--vMdmR4DE-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;rotation=0;strokeColor=light-dark(#000000,#CDCDCD);fillColor=light-dark(#FFFFFF,#FFFFFF);" value="" vertex="1">
+          <mxGeometry height="150" width="600" x="340" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="-sy0TBGO0Y--vMdmR4DE-13" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.983;entryY=0.786;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.017;exitY=0.786;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=light-dark(#000000,#CDCDCD);" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="353.9999999999998" y="450" as="sourcePoint" />
+            <mxPoint x="933.6000000000001" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-sy0TBGO0Y--vMdmR4DE-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#000000);fontSize=20;" value="Feature Request" vertex="1">
+          <mxGeometry height="30" width="156" x="354" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="-sy0TBGO0Y--vMdmR4DE-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#4B4B4B);fontSize=16;" value="Submitted on 08/11/25 at 15:30" vertex="1">
+          <mxGeometry height="30" width="226" x="354" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="-sy0TBGO0Y--vMdmR4DE-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#000000);fontSize=18;" value="Would Like to have dark mode option" vertex="1">
+          <mxGeometry height="30" width="319" x="351" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="-sy0TBGO0Y--vMdmR4DE-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=light-dark(#FFFFFF,#00FF00);align=center;verticalAlign=middle;rounded=1;fontColor=light-dark(#FFFFFF,#005200);fontSize=18;" value="Closed" vertex="1">
+          <mxGeometry height="30" width="80" x="853.3499999999999" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="-sy0TBGO0Y--vMdmR4DE-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#4B4B4B);fontSize=16;" value="Assigned to: Helper-Man" vertex="1">
+          <mxGeometry height="30" width="214" x="710" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="-sy0TBGO0Y--vMdmR4DE-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#4B4B4B);fontSize=16;" value="Assigned to: Helper-Woman" vertex="1">
+          <mxGeometry height="30" width="210" x="710" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="sUU3KCWsRhxrqwX7MJ_3-1" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fontFamily=Helvetica;fontSize=18;fontColor=light-dark(#000000,#000000);fillColor=light-dark(#FFFFFF,#FFFFFF);" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;u&gt;WCAG Compliance Notes&lt;/u&gt;&lt;/h1&gt;&lt;p&gt;Colours:&lt;br&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Page background: #ECECEC&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;-&amp;nbsp;&lt;/span&gt;Content cards: #FFFFFF&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Input fields: #ECECEC&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;-&amp;nbsp;&lt;/span&gt;Primary text: #000000&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Secondary text: #4C4C4C&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;-&amp;nbsp;&lt;/span&gt;Open badge: #FFFF00 background, #5C4A00 text&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;-&amp;nbsp;&lt;/span&gt;Closed badge: #00FF00 background, #005200 text&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- All contrast ratios meet WCAG 2.0 AA (4.5:1 minimum)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Typography:&lt;br&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Heading: 24px bold&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Body text: 16-18px&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Tab Order:&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;①&amp;nbsp;&lt;/span&gt;Logout button&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;②&amp;nbsp;&lt;/span&gt;Create Problem button&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;③&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;First problem card&lt;br&gt;&lt;/span&gt;④ Second problem card&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Accessibility:&lt;br&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;-&amp;nbsp;&lt;/span&gt;Status badges use colour + text (not colour alone)&amp;nbsp;&lt;br&gt;- All interactive elements have visible focus indicator&lt;br&gt;- Cards are keyboard navigable&lt;br&gt;- Page is screen reader compatible with proper headings&lt;/p&gt;" vertex="1">
+          <mxGeometry height="630" width="530" y="720" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="XagZzayEwO82yh0MAfoq" name="Create Problem">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VG1y_vLtXNNWgGGJNXJh-1" parent="1" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.window;align=left;verticalAlign=top;spacingLeft=8;strokeColor2=#008cff;strokeColor3=light-dark(#C4C4C4,#000000);fontColor=light-dark(#666666,#000000);mainText=;fontSize=17;labelBackgroundColor=none;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#ECECEC);perimeterSpacing=0;" value="&lt;font style=&quot;&quot;&gt;CMS Create Problem&lt;/font&gt;" vertex="1">
+          <mxGeometry height="720" width="1280" as="geometry" />
+        </mxCell>
+        <mxCell id="VG1y_vLtXNNWgGGJNXJh-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#CDCDCD);fillColor=light-dark(#FFFFFF,#FFFFFF);" value="" vertex="1">
+          <mxGeometry height="60" width="1280" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VG1y_vLtXNNWgGGJNXJh-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#000000);fontSize=24;fontStyle=1" value="Customer Dashboard" vertex="1">
+          <mxGeometry height="30" width="250" x="340" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="VG1y_vLtXNNWgGGJNXJh-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=light-dark(#000000,#CDCDCD);fillColor=none;align=center;verticalAlign=middle;rounded=1;fontColor=light-dark(#000000,#000000);fontSize=18;" value="Logout" vertex="1">
+          <mxGeometry height="30" width="80" x="860" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="VG1y_vLtXNNWgGGJNXJh-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#000000);fontSize=20;fontStyle=0" value="Submit New Complaint" vertex="1">
+          <mxGeometry height="30" width="215" x="335" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="VG1y_vLtXNNWgGGJNXJh-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#4B4B4B);fontSize=18;" value="Fill out the form below to submit your complaint" vertex="1">
+          <mxGeometry height="30" width="385" x="335" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="VG1y_vLtXNNWgGGJNXJh-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;rotation=0;strokeColor=light-dark(#000000,#CDCDCD);fillColor=light-dark(#FFFFFF,#FFFFFF);arcSize=5;" value="" vertex="1">
+          <mxGeometry height="360" width="600" x="340" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="VG1y_vLtXNNWgGGJNXJh-15" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.983;entryY=0.786;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.017;exitY=0.786;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=light-dark(#000000,#CDCDCD);" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="350.19999999999976" y="470" as="sourcePoint" />
+            <mxPoint x="929.8000000000002" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VG1y_vLtXNNWgGGJNXJh-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=default;align=center;verticalAlign=middle;rounded=1;fontSize=18;" value="Submit" vertex="1">
+          <mxGeometry height="40" width="175" x="370" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="BZP4Ovn-MAL4BjL-o3Xp-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=light-dark(#000000,#CDCDCD);fillColor=none;align=center;verticalAlign=middle;rounded=1;fontColor=light-dark(#000000,#000000);fontSize=18;" value="Cancel" vertex="1">
+          <mxGeometry height="30" width="80" x="570" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="BZP4Ovn-MAL4BjL-o3Xp-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#000000);fontSize=18;" value="Title" vertex="1">
+          <mxGeometry height="30" width="40" x="370" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="CaleMqzBYoMibzdlmXqB-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=light-dark(#FFFFFF,#ECECEC);align=left;verticalAlign=middle;rounded=1;fontFamily=Helvetica;fontSize=16;fontColor=light-dark(#000000,#4B4B4B);spacingLeft=5;" value="Brief summary of your complaint (Max 50 Chars)" vertex="1">
+          <mxGeometry height="30" width="540" x="370" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="CaleMqzBYoMibzdlmXqB-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#000000);fontSize=18;" value="Description" vertex="1">
+          <mxGeometry height="30" width="90" x="370" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="CaleMqzBYoMibzdlmXqB-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=light-dark(#000000,#CC0000);fillColor=light-dark(#FFFFFF,#ECECEC);align=left;verticalAlign=top;rounded=1;fontFamily=Helvetica;fontSize=16;fontColor=light-dark(#000000,#4B4B4B);spacingLeft=5;" value="Please provide any other relevant details (Optional)" vertex="1">
+          <mxGeometry height="90" width="540" x="370" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Dm4_k9kfeVWvJ3FvquvR-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=light-dark(#000000,#E7E7E7);fillColor=none;align=left;verticalAlign=top;rounded=1;fontColor=light-dark(#000000,#CC0000);fontSize=18;labelPosition=center;verticalLabelPosition=middle;" value="&lt;font&gt;⚠ &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Error&lt;/font&gt;&lt;div&gt;&lt;font&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Title is required&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="377.5" x="370" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="o2iCEkJI8NXEesetTiQm-1" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fontFamily=Helvetica;fontSize=18;fontColor=light-dark(#000000,#000000);fillColor=light-dark(#FFFFFF,#FFFFFF);" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;u&gt;WCAG Compliance Notes&lt;/u&gt;&lt;/h1&gt;&lt;p&gt;Colours:&lt;br&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Page background: #ECECEC&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;-&amp;nbsp;&lt;/span&gt;Content cards: #FFFFFF&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Input fields: #ECECEC&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;-&amp;nbsp;&lt;/span&gt;Primary text: #000000&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Placeholder/Secondary text: #4C4C4C&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Error text/field border: #CC000&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- All contrast ratios meet WCAG 2.0 AA (4.5:1 minimum)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Typography:&lt;br&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Heading: 24px bold&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Body text: 16-18px&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Tab Order:&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;①&amp;nbsp;&lt;/span&gt;Logout button&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;②&amp;nbsp;&lt;/span&gt;Title field&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;③&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Description field&lt;br&gt;&lt;/span&gt;④ Submit button&lt;br&gt;⑤ Cancel button&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Accessibility:&lt;br&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;-&amp;nbsp;&lt;/span&gt;All inputs have visible labels above fields&amp;nbsp;&lt;br&gt;- All interactive elements have visible focus indicator&lt;br&gt;- Error uses icon + text + red border (not colour alone)&lt;br&gt;- Form is keyboard navigable&lt;br&gt;- Page is screen reader compatible with proper headings&lt;br&gt;- Placeholder text shows character limits&lt;/p&gt;" vertex="1">
+          <mxGeometry height="680" width="530" y="720" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
