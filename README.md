@@ -61,6 +61,7 @@ This is the assessment project for the Software Architecture and Design (SAaD) m
 
     - test_results/ - Test result screenshots 
     - C4/ - C4 Diagrams (png and raw drawio)
+    - Wireframe/ - Wireframes (png and raw drawio)
     - other/ - Everything else (png and raw drawio)
 
 
