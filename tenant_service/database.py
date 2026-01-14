@@ -1,6 +1,6 @@
 import sqlite3
 
-DATABASE = 'cms.db'
+DATABASE = 'tenant_service.db'
 
 def get_db():    
     conn = sqlite3.connect(DATABASE)
@@ -11,3 +11,4 @@ def get_conn():
     conn = get_db()
     cursor = conn.cursor()
     return conn, cursor
+

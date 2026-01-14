@@ -1,45 +1,40 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import sys
 sys.path.append('.')
-from shared.database import get_db, get_conn
-from shared.auth import SECRET_KEY
-import bcrypt
+from user_service.auth import SECRET_KEY
+from user_service.service import UserService
 import jwt
 import datetime
 
+#HTTP status codes key: 200 OK
+#                       201 Created, For e.g. a new entry in the database
+#                       400 Bad Request, An error in the client input e.g. No '@' symbol in an email entry field
+#                       401 Unauthorised: No valid JWT token in the header
+#                       404 Requested resource could not be found, e.g. if searching for an id that there is no match for.
+
 app = Flask(__name__)
+#In full production this would need to be restricted e.g. CORS(app, origins=['https://CMS.com'])
+CORS(app)
 
-@app.route('/login', methods = ['POST'])
+user_service = UserService()
 
+
+@app.route('/login', methods=['POST'])
 def login():
-    
     data = request.get_json()
     email = data.get('email')
     password = data.get('password')
     
-    print("Email:", email, "Password:", password)
-    
     if not email or not password:
         return jsonify({'error': 'Email and password required'}), 400
     
-    
-    ##conn = get_db()
-    ##cursor = conn.cursor()
-    conn, cursor = get_conn()
-    cursor.execute('SELECT * FROM Users WHERE email = ?', (email,))
-    user = cursor.fetchone()
-    conn.close()
-    
-    print("UID:", user['uID'], "\nEmail", user['email'], "\nRole", user['role'], "\ntenID", user['tenID'])
-    
-    print(type(user['uID']))
-    print(type(user['email']))
-    print(type(user['role']))
-    print(type(user['tenID']))
+    user = user_service.get_by_email(email)
     
     if not user:
         return jsonify({'error': 'Invalid credentials'}), 401
-    if not bcrypt.checkpw(password.encode(), user['passHash'].encode()):
+    
+    if not user_service.verify_password(password, user['passHash']):
         return jsonify({'error': 'Invalid credentials'}), 401
     
     token = jwt.encode({

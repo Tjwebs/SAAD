@@ -1,9 +1,10 @@
+import os
 import jwt
 
-SECRET_KEY = 'rodentS4551'
+SECRET_KEY = os.environ.get('SECRET_KEY', 'rodentS4551')
 
 
-def decodeToken(auth_header):
+def decode_token(auth_header):
     
     if not auth_header or not auth_header.startswith('Bearer '):
         return None, 'Token Required'
