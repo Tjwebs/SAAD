@@ -44,6 +44,7 @@ This is the assessment project for the Software Architecture and Design (SAaD) m
 ### 3.1. Contents of Submission
 
 **POC**
+
     - frontend/ - Flask frontend serving HTML templates
     - user_service/ - User authentication microservice
     - problem_service/ - Problem management microservice
@@ -57,6 +58,7 @@ This is the assessment project for the Software Architecture and Design (SAaD) m
     - requirements.txt - Python dependencies
 
 **Images**
+
     - test_results/ - Test result screenshots 
     - C4/ - C4 Diagrams (png and raw drawio)
     - other/ - Everything else (png and raw drawio)
