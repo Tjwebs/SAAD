@@ -64,6 +64,10 @@ This is the assessment project for the Software Architecture and Design (SAaD) m
     - Wireframe/ - Wireframes (png and raw drawio)
     - other/ - Everything else (png and raw drawio)
 
+**Links**
+
+    -links.txt - Link to vid
+
 
 ### 3.2. Prerequisites
 
