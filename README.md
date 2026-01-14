@@ -43,18 +43,23 @@ This is the assessment project for the Software Architecture and Design (SAaD) m
 
 ### 3.1. Contents of Submission
 
-- frontend/ - Flask frontend serving HTML templates
-- user_service/ - User authentication microservice
-- problem_service/ - Problem management microservice
-- tenant_service/ - Tenant management microservice
-- templates/ - HTML templates (login, dashboard, create problem)
-- static/ - CSS stylesheets
-- tests/ - pytest and Selenium test files
-- images/ - Test result screenshots
-- tenant_service.db - Tenant database
-- user_service.db - User database
-- problem_service.db - Problem database
-- requirements.txt - Python dependencies
+**POC**
+    - frontend/ - Flask frontend serving HTML templates
+    - user_service/ - User authentication microservice
+    - problem_service/ - Problem management microservice
+    - tenant_service/ - Tenant management microservice
+    - templates/ - HTML templates (login, dashboard, create problem)
+    - static/ - CSS stylesheets
+    - tests/ - pytest and Selenium test files
+    - tenant_service.db - Tenant database
+    - user_service.db - User database
+    - problem_service.db - Problem database
+    - requirements.txt - Python dependencies
+
+**Images**
+    - test_results/ - Test result screenshots 
+    - C4/ - C4 Diagrams (png and raw drawio)
+    - other/ - Everything else (png and raw drawio)
 
 
 ### 3.2. Prerequisites
@@ -94,7 +99,7 @@ pytest tests/ -v
 
 **Create Problem:** Click "Create Problem", enter title (max 50 chars) and optional description
 
-**Update Status:** Use Postman to PATCH `/problems/{id}` with new status (API only)
+**Update Status:** Click "Close Problem" on the dashboard to close a problem ticket
 
 
 
